@@ -1,0 +1,33 @@
+2026-03-23 16:25:58 pid:10 Workerman[think] start in DAEMON mode
+2026-05-23 00:50:39 pid:579 Workerman[/var/www/crmeb/think] start in DEBUG mode
+2026-05-23 16:43:06 pid:25 Workerman[/var/www/crmeb/think] start in DEBUG mode
+2026-05-23 19:49:35 pid:25 Workerman[/var/www/crmeb/think] start in DEBUG mode
+2026-06-01 05:18:50 pid:60 think\exception\ErrorException: Packets out of order. Expected 1 received 0. Packet size=145 in /var/www/crmeb/vendor/topthink/think-orm/src/db/PDOConnection.php:744
+Stack trace:
+#0 [internal function]: think\initializer\Error->appError()
+#1 /var/www/crmeb/vendor/topthink/think-orm/src/db/PDOConnection.php(744): PDO->prepare()
+#2 /var/www/crmeb/vendor/topthink/think-orm/src/db/PDOConnection.php(688): think\db\PDOConnection->getPDOStatement()
+#3 /var/www/crmeb/vendor/topthink/think-orm/src/db/PDOConnection.php(846): think\db\PDOConnection->pdoQuery()
+#4 /var/www/crmeb/vendor/topthink/think-orm/src/db/BaseQuery.php(1127): think\db\PDOConnection->find()
+#5 /var/www/crmeb/app/dao/BaseDao.php(193): think\db\BaseQuery->find()
+#6 /var/www/crmeb/app/services/system/admin/AdminAuthServices.php(81): app\dao\BaseDao->get()
+#7 /var/www/crmeb/crmeb/services/workerman/WorkermanHandle.php(39): app\services\system\admin\AdminAuthServices->parseToken()
+#8 /var/www/crmeb/crmeb/services/workerman/WorkermanService.php(81): crmeb\services\workerman\WorkermanHandle->login()
+#9 [internal function]: crmeb\services\workerman\WorkermanService->onMessage()
+#10 /var/www/crmeb/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func()
+#11 [internal function]: Workerman\Connection\TcpConnection->baseRead()
+#12 /var/www/crmeb/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array()
+#13 /var/www/crmeb/vendor/workerman/workerman/Worker.php(2357): Workerman\Events\Select->loop()
+#14 /var/www/crmeb/vendor/workerman/workerman/Worker.php(1488): Workerman\Worker->run()
+#15 /var/www/crmeb/vendor/workerman/workerman/Worker.php(1318): Workerman\Worker::forkOneWorkerForLinux()
+#16 /var/www/crmeb/vendor/workerman/workerman/Worker.php(1292): Workerman\Worker::forkWorkersForLinux()
+#17 /var/www/crmeb/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::forkWorkers()
+#18 /var/www/crmeb/crmeb/command/Workerman.php(134): Workerman\Worker::runAll()
+#19 /var/www/crmeb/vendor/topthink/framework/src/think/console/Command.php(210): crmeb\command\Workerman->execute()
+#20 /var/www/crmeb/vendor/topthink/framework/src/think/Console.php(654): think\console\Command->run()
+#21 /var/www/crmeb/vendor/topthink/framework/src/think/Console.php(313): think\Console->doRunCommand()
+#22 /var/www/crmeb/vendor/topthink/framework/src/think/Console.php(250): think\Console->doRun()
+#23 /var/www/crmeb/think(19): think\Console->run()
+#24 {main}
+2026-06-01 05:18:50 pid:60 Worker[60] process terminated
+2026-06-01 05:18:50 pid:25 worker[none:60] exit with status 64000

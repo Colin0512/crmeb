@@ -1,0 +1,2 @@
+2026-03-23 16:27:06|error|0|192.168.65.1|906|get|api|/api/theme_info/theme|{"type":"theme"}|{"file":"/var/www/app/api/controller/v1/PublicController.php","line":860,"message":"Invalid argument supplied for foreach()","code":2}
+2026-03-23 16:28:09|error|0|192.168.65.1|291|get|api|/api/theme_info/theme|{"type":"theme"}|{"file":"/var/www/app/api/controller/v1/PublicController.php","line":860,"message":"Invalid argument supplied for foreach()","code":2}

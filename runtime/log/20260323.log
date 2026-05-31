@@ -1,0 +1,12 @@
+2026-03-23 16:27:04|info|[ VIEW ] /var/www/public/mobile.html [ array (
+  0 => 'siteName',
+  1 => 'siteUrl',
+) ]
+2026-03-23 16:27:05|info|[ VIEW ] /var/www/public/index.html [ array (
+) ]
+2026-03-23 16:28:08|info|[ VIEW ] /var/www/public/mobile.html [ array (
+  0 => 'siteName',
+  1 => 'siteUrl',
+) ]
+2026-03-23 16:28:08|info|[ VIEW ] /var/www/public/index.html [ array (
+) ]

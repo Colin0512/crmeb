@@ -1,0 +1,80 @@
+# Git 相关
+.git
+.gitignore
+.gitattributes
+
+# IDE 和编辑器
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# 文档目录
+dev-docs
+readme
+template
+*.md
+
+# CodeBuddy 配置
+.codebuddy
+.trae
+
+# Docker 相关(保留配置文件)
+Dockerfile
+Dockerfile.*
+docker-compose*.yml
+.dockerignore
+
+# 依赖目录
+node_modules
+bower_components
+
+# 构建产物
+dist
+build
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+.cache
+.tmp
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 测试文件
+tests
+phpunit.xml
+.phpunit
+.php_cs.cache
+
+# 环境配置文件(保留 .env.example)
+.env
+.env.local
+.env.*.local
+
+# 运行时文件
+runtime/cache/*
+runtime/log/*
+runtime/temp/*
+!runtime/cache/.gitkeep
+!runtime/log/.gitkeep
+!runtime/temp/.gitkeep
+
+# 上传文件(可选,根据需要调整)
+public/uploads/attach/2026/*
+public/theme/*
+# public/routine/*
+
+# 备份文件
+backup/*
+*.bak
+*.backup
+
+# 压缩文件
+*.zip
+*.tar.gz
+*.rar
